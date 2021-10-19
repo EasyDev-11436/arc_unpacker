@@ -13,8 +13,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: configure
       run: |
-           sudo apt-get install libboost-all-dev
-           mkdir build
-           cd build
+           sudo apt-get install libboost-all-dev libwebp
            cmake -DCMAKE_BUILD_TYPE=release
            make -j8
