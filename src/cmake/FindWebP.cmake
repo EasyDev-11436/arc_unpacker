@@ -30,7 +30,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 find_package(PkgConfig)
-pkg_check_modules(PC_WEBP QUIET libwebp)
+pkg_check_modules(PC_WEBP QUIET libwebp-dev)
 
 # Look for the header file.
 find_path(WEBP_INCLUDE_DIRS
