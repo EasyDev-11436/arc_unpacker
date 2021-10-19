@@ -30,7 +30,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 find_package(PkgConfig)
-pkg_check_modules(PC_WEBP QUIET libwebp-dev)
+pkg_check_modules(PC_WEBP QUIET libwebp)
 
 # Look for the header file.
 find_path(WEBP_INCLUDE_DIRS
@@ -48,4 +48,4 @@ find_library(
 mark_as_advanced(WEBP_LIBRARIES)
 
 include(FindPackageHandleStandardArgs)
-FIND_PACKAGE_HANDLE_STANDARD_ARGS(WEBP DEFAULT_MSG WEBP_INCLUDE_DIRS WEBP_LIBRARIES)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(WEBP DEFAULT_MSG WEBP_INCLUDE_DIRS WEBP_LIBRARIES_FOUND)
