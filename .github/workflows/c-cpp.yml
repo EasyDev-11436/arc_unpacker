@@ -15,6 +15,5 @@ jobs:
       run: |
            sudo apt-get update
            sudo apt-get upgrade -y
-           sudo apt-get install libboost-all-dev libpng-dev libjpeg-dev libwebp-dev libc6-dev libssl-dev -y
-           cmake -DCMAKE_BUILD_TYPE=release
-           make -j8 arc_unpacker
+           cmake DCMAKE_INSTALL_PREFIX=/usr/bin/ -DCMAKE_BUILD_TYPE=release
+           make
