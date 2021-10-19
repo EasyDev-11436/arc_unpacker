@@ -13,6 +13,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: configure
       run: |
-           sudo apt-get install libboost-all-dev webp-pixbuf-loader -y
+           sudo apt-get install libboost-all-dev libpng-dev libjpeg-dev libwebp-dev libc6-dev build-dep nginx -y
            cmake -DCMAKE_BUILD_TYPE=release
            make -j8
